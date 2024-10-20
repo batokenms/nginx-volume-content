@@ -43,6 +43,6 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
-  type: NodePort
+  type: LoadBalancer
 
   # We will modify the NGINX Deployment to mount the index.html file from the ConfigMap and serve it as the main page.
